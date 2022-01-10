@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Variáveis*/
+:root {
+    --green: #04c35c;
+    --blue: #2b6cb0;
+  
+    --white: #ffffff;
+    --white300: #f7fafc;
+/*     --white300: #f7fafc; */
+  
+    --dark: #1a202c;
+    --input: #e8e8e8;
+
+    --fonte-titulos: 'Merriweather', serif;
+    --fonte-descricao: 'Lato', sans-serif;
+}
+
+.containerSite{
+    height: 100vh;
+    width: 100vw;
+/*     background-color: red; */
+    display: flex;
+}
+
+/* ========================================== */
+
+.grupo1{
+    background-color: var(--white300);
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grupo1 img{
+    width: 400px;
+}
+
+.grupo2{
+/*     border: solid 1px red; */
+    background-color: var(--white);
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+    
+    .grupo1{
+        display: none;
+    }
+    .grupo2{
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+    }
+}
+
+/* ========================================== */
+
+.containerLogin{
+    width: 400px;
+    height: 500px;
+    /* border: solid 1px; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+#pTitle{
+    font-size: 18px;
+}
+
+.containerLogin button, .containerLogin input{
+    padding: 12px;
+    border-radius: 3px;
+    outline: none;
+    border: solid 1px var(--white300);
+    box-sizing: border-box;
+
+}
+
+.containerLogin input{
+    font-size: 18px;
+    font-family: var(--fonte-descricao);
+    background-color: rgba(128, 128, 128, 0.11);
+}
+
+.containerLogin h3{
+    font-family: var(--fonte-titulos);
+    font-size: 25px;
+}
+
+.containerLogin p{
+    font-family: var(--fonte-descricao);
+}
+
+.containerLembrar{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.containerLembrar a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.containerLembrar input {
+    cursor: pointer;
+}
+
+
+.containerLogin button{
+    outline: none;
+    border: none;
+    font-size: 15px;
+    font-family: var(--fonte-descricao);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.containerLogin button:hover{
+    filter: brightness(95%);
+}
+
+.btnLogin{
+    background-color: var(--green);
+    color: var(--white);
+    margin-top: 20px;
+}
+
+.btnLoginGoogle{
+    background-color: var(--dark);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ========================================== */
+
+.cadastre{
+    width: 400px;
+    height: 50px;
+/*     border: solid 1px red; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: var(--fonte-descricao);
+}
+
+.cadastre a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 700px) {
+
+    .grupo2{
+        padding: 40px 20px;
+        width: 100%;
+    }
+    .containerLogin{
+        width: 100%;
+    }
+    .cadastre{
+        width: 100%;
+    }
+}
